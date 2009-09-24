@@ -50,7 +50,7 @@ Installation
 	
 #. (Optionally) At the command line, create a symbolic link from your project's media folder to the media folder inside the jumptoadmin package::
 	
-	ln -s /path/to/your/media/jumptoadmin/ /path/to/django-jumptoadmin/jumptoadmin/media/
+	ln -s /path/to/your/media/jumptoadmin/ /path/to/django-jumptoadmin/jumptoadmin/media/jumptoadmin/
 
 	
 #. (Optionally) Specify an JUMPTOADMIN_MEDIA_URL variable in your settings.py file. If not specified, JUMPTOADMIN_MEDIA_URL will default to your MEDIA_URL value + 'jumptoadmin/'::
@@ -60,9 +60,9 @@ Installation
 
 #. In your base.html template (or any specific template you'd like) add the following inside the HTML <head> to bring in the Javascript and CSS needed to show JumpToAdmin links::
 	
-	{% if user.is_staff %}<script type="text/javascript" src="{{ JUMPTOADMIN_MEDIA_URL }}jumptoadmin.js"></script>{% endif %}
+	{% if user.is_staff %}<script type="text/javascript" src="{{ JUMPTOADMIN_MEDIA_URL }}js/jumptoadmin.js"></script>{% endif %}
 	
-	{% if user.is_staff %}<link href="{{ JUMPTOADMIN_MEDIA_URL }}jumptoadmin.css" rel="stylesheet" type="text/css" />{% endif %}
+	{% if user.is_staff %}<link href="{{ JUMPTOADMIN_MEDIA_URL }}css/jumptoadmin.css" rel="stylesheet" type="text/css" />{% endif %}
 
 
 #. In your base.html template (or any specific template you'd like) add the following just before the </body> to insert a global Javascript variable named 'jumpFlagList' that contains all the information needed to render links for each item::

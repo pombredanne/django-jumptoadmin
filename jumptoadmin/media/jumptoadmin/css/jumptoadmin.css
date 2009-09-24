@@ -34,7 +34,7 @@
 	width:100%;
 }
 
-.TB_overlayMacFFBGHack {background: url(macFFBgHack.png) repeat;}
+.TB_overlayMacFFBGHack {background: url(../img/macFFBgHack.png) repeat;}
 .TB_overlayBG {
 	background-color:#000;
 	filter:alpha(opacity=75);
@@ -247,7 +247,7 @@ margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = d
 }
 /* Poof effect from http://www.kombine.net/jquery/jquery-poof-effect */
 .poof { 
-    background: transparent url(poof.png) no-repeat 0 0; 
+    background: transparent url(../img/poof.png) no-repeat 0 0; 
     cursor: pointer; 
     display: none; 
     height: 32px; 
